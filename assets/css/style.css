@@ -62,3 +62,31 @@ img {
   width: 355px;
   height: 50px;
 }
+
+.hero-container {
+  display: flex;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+  padding-left: 45px;
+}
+
+.booking-input {
+  margin-bottom: 25px;
+  width: 512px;
+  height: 70px;
+}
+
+.search-number {
+  display: flex;
+  align-items: center;
+}
+
+.booking-offers {
+  margin-left: 30px;
+}
+
+.special-offer-block {
+  flex-shrink: 0;
+}
