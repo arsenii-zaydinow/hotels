@@ -109,6 +109,41 @@ img {
   color: #cc9933;
 }
 
+.golden-fill-btn {
+  padding: 25px 30px;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+  background-color: #cc9933;
+  cursor: pointer;
+}
+
+.golden-border-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: 1px solid #cc9933;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: #cc9933;
+}
+
+.input {
+  margin-bottom: 24px;
+  padding: 0px 20px;
+  border: 0;
+  border-radius: 12px;
+  outline: none;
+  width: 515px;
+  height: 70px;
+}
+
 /* Header */
 
 .logo-block {
@@ -197,16 +232,6 @@ img {
   margin-right: 55px;
 }
 
-.booking-input {
-  margin-bottom: 24px;
-  padding: 0px 20px;
-  border: 0;
-  border-radius: 12px;
-  outline: none;
-  width: 515px;
-  height: 70px;
-}
-
 .search::placeholder {
   color: #999999;
   font-size: 16px;
@@ -215,19 +240,6 @@ img {
 .search-number {
   display: flex;
   align-items: center;
-}
-
-.booking-btn {
-  padding: 25px 30px;
-  border: 0;
-  border-radius: 12px;
-  outline: none;
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 700;
-  color: #fff;
-  background-color: #cc9933;
-  cursor: pointer;
 }
 
 .booking-offers {
@@ -464,18 +476,6 @@ img {
   color: #999999;
 }
 
-.places-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 20px;
-  border: 1px solid #cc9933;
-  border-radius: 12px;
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 700;
-  color: #cc9933;
-}
-
 .places-more-banner {
   position: relative;
   overflow: hidden;
@@ -506,4 +506,171 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateY(2px);
+}
+
+/* Section Contacts */
+
+.contacts-container {
+  display: flex;
+}
+
+.contacts-info-block {
+  padding: 45px;
+  max-width: 470px;
+  height: 100%;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.contacts-item {
+  display: flex;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.contacts-item:not(:first-child) {
+  padding-top: 25px;
+}
+
+.contacts-item-heading {
+  flex: 0 0 145px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #666666;
+}
+
+.contacts-item-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.contacts-item-mail {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.contacts-info-btn {
+  margin-top: 45px;
+  padding: 25px;
+}
+
+.contacts-form-block {
+  margin: 0 auto ;
+  padding-top: 75px;
+}
+
+.contacts-form-heading {
+  margin-bottom: 45px;
+  padding: 0;
+  text-align: center;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.contacts-form-input {
+  width: 100%;
+}
+
+.contacts-form-textarea {
+  padding-top: 20px;
+  max-width: 100%;
+  height: 110px;
+  resize: none;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 25px;
+}
+
+.footer-container {
+  display: flex;
+  padding: 50px;
+  max-width: 1170px;
+  border-radius: 12px;
+  background: #333333 url(/assets/img/sun.png) 80% bottom no-repeat;
+}
+
+.footer-info-container {
+  max-width: 310px;
+}
+
+.footer-info-text {
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.footer-contacts-container {
+  margin-left: 110px;
+}
+
+.footer-contacts-text {
+  margin-bottom: 35px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.footer-contacts-link-block {
+  margin-bottom: 30px;
+}
+
+.footer-contacts-link {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-social-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer-social-link {
+  font-size: 0;
+}
+
+.footer-social-link:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-social-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.trip-icon {
+  background-image: url(/assets/img/tripadvisor.png);
+}
+
+.twitter-icon {
+  background-image: url(/assets/img/twitter.png);
+}
+
+.facebook-icon {
+  background-image: url(/assets/img/facebook.png);
+}
+
+.vk-icon {
+  background-image: url(/assets/img/vk.png);
+}
+
+.google-icon {
+  background-image: url(/assets/img/google.png);
 }

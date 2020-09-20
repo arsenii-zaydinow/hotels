@@ -64,7 +64,7 @@
             </li>
           </ul>
         </nav>
-        <input class="search" type="text" placeholder="Поиск">
+        <input class="search" type="search" name="search" placeholder="Поиск">
       </div>
     </div>
 
@@ -79,19 +79,21 @@
           <h2 class="section-heading">
             Быстрая бронь
           </h2>
-          <input class="booking-input" type="text" placeholder="Город">
-          <input class="booking-input" type="text" placeholder="Категория номера">
-          <input class="booking-input" type="text" placeholder="Дата заселения">
-          <input class="booking-input" type="text" placeholder="Количество ночей">
-          <input class="booking-input" type="text" placeholder="Количество гостей">
-          <div class="search-number">
-            <button class="booking-btn">
-              Найти номер
-            </button>
-            <div class="booking-offers">
-              <span class="golden-text">9 756</span> предложений доступно
+          <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <input class="input" type="text" name="city" placeholder="Город">
+            <input class="input" type="text" name="room-type" placeholder="Категория номера">
+            <input class="input" type="text" name="date" placeholder="Дата заселения">
+            <input class="input" type="number" name="nights-amount" min="1" placeholder="Количество ночей">
+            <input class="input" type="number" name="guests-amount" min="1" placeholder="Количество гостей">
+            <div class="search-number">
+              <button class="golden-fill-btn">
+                Найти номер
+              </button>
+              <div class="booking-offers">
+                <span class="golden-text">9 756</span> предложений доступно
+              </div>
             </div>
-          </div>
+          </form>
         </div>
 
         <div class="special-offer-block">
@@ -302,7 +304,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-2.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>
@@ -336,7 +338,7 @@
                 <img src="assets/img/star-1.png" alt="" >
                 <img src="assets/img/star-2.png" alt="" >
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>   
@@ -370,7 +372,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-1.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>     
@@ -404,7 +406,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-1.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>
@@ -438,7 +440,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-2.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div> 
@@ -472,7 +474,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-2.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>
@@ -506,7 +508,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-1.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>
@@ -540,7 +542,7 @@
                 <img src="assets/img/star-1.png" alt="">
                 <img src="assets/img/star-2.png" alt="">
               </div>
-              <a class="places-btn" href="#">
+              <a class="golden-border-btn" href="#">
                 Номера
               </a>
             </div>
@@ -558,7 +560,139 @@
       </div>
     </section>
 
+    <section class="section section-contacts">
+      <div class="container">
+        <h2 class="section-heading">
+          Контакты
+        </h2>
+        <div class="contacts-container">
+          <div class="contacts-info-block">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <h3 class="contacts-item-heading">
+                  Адрес
+                </h3>
+                <address class="contacts-item-text">
+                  Москва, улица Юности, дом 5 строение 4, офис 2 
+                </address>
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-item-heading">
+                  Телефоны
+                </h3>
+                <div class="contacts-item-text">
+                  <a class="golden-text" href="tel:+74995356434">
+                    +7 (499) 535-64-34
+                  </a>
+                  <br>
+                  <a class="golden-text" href="tel:+74950050544">
+                    +7 (495) 005-05-44
+                  </a>
+                </div>  
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-item-heading">
+                  E-mail
+                </h3>
+                <div class="contacts-item-mail">
+                  <a class="golden-text" href="mailto:lg.oona@mail.ru">
+                    lg.oona@mail.ru
+                  </a>
+                  по вопросам бронирования
+                  <br>
+                  <a class="golden-text" href="mailto:hotels.ln@mail.ru">
+                    hotels.ln@mail.ru 
+                  </a>
+                  по вопросам сотрудничества
+                </div>
+              </li>
+              <li class="contacts-item">
+                <h3 class="contacts-item-heading">
+                  График
+                </h3>
+                <div class="contacts-item-text">
+                  Понедельник - пятница, <br> с 10:00 до 19:00
+                </div>
+              </li>
+            </ul>
+            <a class="golden-border-btn contacts-info-btn" href="#">
+              Построить маршрут
+            </a>
+          </div>
+          <div class="contacts-form-block">
+            <div class="section-heading contacts-form-heading">
+              Напишите нам
+            </div>
+            <form class="contacts-form" action="">
+              <input class="input contacts-form-input" type="text" name="name" placeholder="Имя">
+              <input class="input contacts-form-input" type="tel" name="tel" placeholder="+7">
+              <textarea class="input contacts-form-input contacts-form-textarea" name="message" placeholder="Сообщение..." cols="30" rows="10"></textarea>
+              <button class="golden-fill-btn">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info-container">
+        <p class="footer-info-text">
+          © 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+        </p>
+        <p class="footer-info-text">
+          Представленная на сайте информация носит справочный характер <br> и не является публичной офертой
+        </p>
+        <a class="golden-text" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+      <div class="footer-contacts-container">
+        <address class="footer-contacts-text">
+          11710, улица Юности, дом 5 строение 4, офис 2
+        </address>
+        <div class="footer-contacts-link-block">
+          <a class="golden-text footer-contacts-link" href="tel:+74995356434">
+            +7 (499) 535-64-34
+          </a>
+          <br>
+          <a class="golden-text" href="tel:+74950050544">
+            +7 (495) 005-05-44
+          </a>
+        </div>  
+        <div class="footer-contacts-link-block">
+          <a class="golden-text footer-contacts-link" href="mailto:lg.oona@mail.ru">
+            lg.oona@mail.ru 
+          </a>
+          <br>
+          <a class="golden-text footer-contacts-link" href="mailto:hotels.ln@mail.ru">
+            hotels.ln@mail.ru
+          </a>
+        </div>
+      </div>
+      <div class="footer-social-container">
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-icon trip-icon"></span>
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-icon twitter-icon"></span>
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-icon facebook-icon"></span>
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-icon vk-icon"></span>
+        </a>
+        <a href="#" class="footer-social-link">
+          <span class="footer-social-icon google-icon"></span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
