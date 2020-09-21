@@ -80,11 +80,24 @@
             Быстрая бронь
           </h2>
           <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <input class="input" type="text" name="city" placeholder="Город">
-            <input class="input" type="text" name="room-type" placeholder="Категория номера">
-            <input class="input" type="text" name="date" placeholder="Дата заселения">
-            <input class="input" type="number" name="nights-amount" min="1" placeholder="Количество ночей">
-            <input class="input" type="number" name="guests-amount" min="1" placeholder="Количество гостей">
+            <input class="input" type="text" required name="city" placeholder="Город">
+            <select class="input booking-form-select" name="room-type" required>
+              <option class="booking-form-option" value="" disabled selected>
+                Категория номера
+              </option>
+              <option class="booking-form-option">
+                Эконом
+              </option>
+              <option class="booking-form-option">
+                Стандарт
+              </option>
+              <option class="booking-form-option">
+                Люкс
+              </option>
+            </select>
+            <input class="input" type="text" required onfocus="(this.type='date')" name="date" placeholder="Дата заселения">
+            <input class="input" type="number" required name="nights-amount" min="1" placeholder="Количество ночей">
+            <input class="input" type="number" required name="guests-amount" min="1" placeholder="Количество гостей">
             <div class="search-number">
               <button class="golden-fill-btn">
                 Найти номер
@@ -623,10 +636,10 @@
             <div class="section-heading contacts-form-heading">
               Напишите нам
             </div>
-            <form class="contacts-form" action="">
-              <input class="input contacts-form-input" type="text" name="name" placeholder="Имя">
-              <input class="input contacts-form-input" type="tel" name="tel" placeholder="+7">
-              <textarea class="input contacts-form-input contacts-form-textarea" name="message" placeholder="Сообщение..." cols="30" rows="10"></textarea>
+            <form class="contacts-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <input class="input contacts-form-input" type="text" required name="name" placeholder="Имя">
+              <input class="input contacts-form-input" type="tel" required name="tel" placeholder="+7">
+              <textarea class="input contacts-form-input contacts-form-textarea" required name="message" placeholder="Сообщение..." cols="30" rows="10"></textarea>
               <button class="golden-fill-btn">
                 Отправить
               </button>
