@@ -150,6 +150,22 @@ img {
   font-size: 16px;
 }
 
+.grow {
+  transition: transform 1s;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.slide-right {
+  transition: transform 1s;
+}
+
+.slide-right:hover {
+  transform: translateX(10px);
+}
+
 /* Header */
 
 .logo-block {
@@ -163,20 +179,20 @@ img {
 
 .phone {
   margin-left: 30px;
+  padding-top: 3px;
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
   color: #666666;
-  transform: translateY(3px);
 }
 
 .login {
   margin-left: auto;
+  padding-top: 1px;
   padding-right: 10px;
   font-size: 16px;
   line-height: 1;
   font-weight: 500;
-  transform: translateY(1px);
 }
 
 .nav-block {
