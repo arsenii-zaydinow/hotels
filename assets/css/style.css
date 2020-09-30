@@ -120,6 +120,11 @@ img {
   color: #fff;
   background-color: #cc9933;
   cursor: pointer;
+  transition: transform 1s;
+}
+
+.golden-fill-btn:hover {
+  transform: scale(1.08);
 }
 
 .golden-border-btn {
@@ -150,14 +155,6 @@ img {
   font-size: 16px;
 }
 
-.grow {
-  transition: transform 1s;
-}
-
-.grow:hover {
-  transform: scale(1.1);
-}
-
 .slide-right {
   transition: transform 1s;
 }
@@ -175,15 +172,25 @@ img {
 
 .logo {
   font-size: 0;
+  transition: transform 1s;
+} 
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .phone {
   margin-left: 30px;
-  padding-top: 3px;
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
   color: #666666;
+  transition: transform 1s;
+  transform: translateY(3px);
+}
+
+.phone:hover {
+  transform: translateY(3px) scale(1.05);
 }
 
 .login {
@@ -207,6 +214,13 @@ img {
 .nav-list {
   display: flex;
   margin-right: calc(1130px - 640px - 355px);
+}
+.nav-item {
+  transition: transform 1s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-item:not(:last-child) {
@@ -274,7 +288,6 @@ img {
   color:#999;
 }
 
-
 .search-number {
   display: flex;
   align-items: center;
@@ -290,6 +303,11 @@ img {
 
 .special-offer-banner {
   position: relative;
+  transition: transform 1s;
+}
+
+.special-offer-banner:hover {
+  transform: scale(1.03);
 }
 
 .special-offer-text {
