@@ -88,12 +88,12 @@ img {
   max-width: 100%;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 .section {
   padding-top: 70px;
@@ -193,27 +193,25 @@ img {
   align-items: center;
 }
 
-.logo {
+.logo-img {
   border-radius: 12px;
   font-size: 0;
   transition-duration: 1s;
   transition-property: box-shadow, transform;
 } 
 
-.logo:hover {
+.logo-img:hover {
   box-shadow: 0 0 10px var(--golden-color);
   transform: scale(1.05);
 }
 
 .phone {
-  margin-left: 30px;
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
   color: var(--dark-gray-color);
   transition: transform 1s;
   transform: translateY(3px);
-  
 }
 
 .phone:hover {
@@ -221,7 +219,7 @@ img {
 }
 
 .login {
-  margin-left: auto;
+  /* margin-left: auto; */
   padding-top: 1px;
   padding-right: 10px;
   font-size: 16px;
