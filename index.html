@@ -15,22 +15,28 @@
 <body class="body">
 
   <header class="header">
+
     <div class="container">
 
       <div class="logo-block row">
-        <a class="col-lg-3 logo" href="#">
-          <img class="logo-img" src="assets/img/logo.png" alt="Lagoona - сеть отелей">
-        </a>
+        <div class="col-lg-3">
+          <a class="logo" href="#">
+            <img class="logo-img" src="assets/img/logo.png" alt="Lagoona - сеть отелей">
+          </a>
+        </div>
         <div class="col-lg-7">
           <a class="phone" href="tel:+74953225448">
             +7 495 322 54 48
           </a>
         </div>
-        <a class="col-lg-2 golden-text login slide-right" href="#">
-          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-          Личный кабинет
-        </a>
+        <div class="col-lg-2">
+          <a class="golden-text login slide-right" href="#">
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            Личный кабинет
+          </a>
+        </div> 
       </div>
+      
 
       <div class="nav-block">
         <nav class="nav">
@@ -69,6 +75,7 @@
         </nav>
         <input class="search" type="search" name="search" placeholder="Поиск">
       </div>
+
     </div>
 
   </header>
@@ -77,63 +84,67 @@
 
     <section class="section section-hero">
       <div class="container hero-container">
+        <div class="row">
 
-        <div class="booking-block">
-          <h2 class="section-heading">
-            Быстрая бронь
-          </h2>
-          <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <input class="input" type="text" required name="city" placeholder="Город">
-            <select class="input booking-form-select" name="room-type" required>
-              <option class="booking-form-option" value="" disabled selected>
-                Категория номера
-              </option>
-              <option class="booking-form-option">
-                Эконом
-              </option>
-              <option class="booking-form-option">
-                Стандарт
-              </option>
-              <option class="booking-form-option">
-                Люкс
-              </option>
-            </select>
-            <input class="input" type="text" required onfocus="(this.type='date')" name="date" placeholder="Дата заселения">
-            <input class="input" type="number" required name="nights-amount" min="1" placeholder="Количество ночей">
-            <input class="input" type="number" required name="guests-amount" min="1" placeholder="Количество гостей">
-            <div class="search-number">
-              <button class="golden-fill-btn">
-                Найти номер
-              </button>
-              <div class="booking-offers">
-                <span class="golden-text">9 756</span> предложений доступно
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="special-offer-block">
-          <h2 class="section-heading">
-            Спецпредложение
-          </h2>
-          <div class="special-offer-banner">
-            <img class="special-offer-img" src="assets/img/sofa.png" alt="Спецпредложение">
-            <div class="special-offer-text">
-              <strong class="special-offer-title">
-                Номера категории люкс
-              </strong>
-              <div class="special-offer-more-block">
-                <div class="special-offer-price">
-                  от 5 000 р
+          <div class="booking-block col-lg-6">
+            <h2 class="section-heading">
+              Быстрая бронь
+            </h2>
+            <form class="booking-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <input class="input" type="text" required name="city" placeholder="Город">
+              <select class="input booking-form-select" name="room-type" required>
+                <option class="booking-form-option" value="" disabled selected>
+                  Категория номера
+                </option>
+                <option class="booking-form-option">
+                  Эконом
+                </option>
+                <option class="booking-form-option">
+                  Стандарт
+                </option>
+                <option class="booking-form-option">
+                  Люкс
+                </option>
+              </select>
+              <input class="input" type="text" required onfocus="(this.type='date')" name="date" placeholder="Дата заселения">
+              <input class="input" type="number" required name="nights-amount" min="1" placeholder="Количество ночей">
+              <input class="input" type="number" required name="guests-amount" min="1" placeholder="Количество гостей">
+              <div class="search-number">
+                <button class="golden-fill-btn">
+                  Найти номер
+                </button>
+                <div class="booking-offers">
+                  <span class="golden-text">9 756</span> предложений доступно
                 </div>
-                <a class="special-offer-more" href="#">
-                  Подробнее
-                  <span class="special-offer-arrow-icon"></span>
-                </a>
+              </div>
+            </form>
+          </div>
+  
+          <div class="special-offer-block col-lg-6">
+            <h2 class="section-heading">
+              Спецпредложение
+            </h2>
+            <div class="special-offer-banner">
+              <img class="special-offer-img" src="assets/img/sofa.png" alt="Спецпредложение">
+              <div class="special-offer-text">
+                <strong class="special-offer-title">
+                  Номера категории люкс
+                </strong>
+                <div class="special-offer-more-block">
+                  <div class="special-offer-price">
+                    от 5 000 р
+                  </div>
+                  <a class="special-offer-more" href="#">
+                    Подробнее
+                    <span class="special-offer-arrow-icon"></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
+        
 
       </div>
     </section>
@@ -159,70 +170,93 @@
           Услуги
         </h2>
         <ul class="services-list">
-          <li class="services-item">
-            <div class="services-item-img-block">
-              <img class="services-item-img" src="assets/img/service.png" alt="Эксклюзивное обслуживание">
+
+          <div class="row">
+            
+            <div class="col-lg-6">
+              <li class="services-item">
+                <div class="services-item-img-block">
+                  <img class="services-item-img" src="assets/img/service.png" alt="Эксклюзивное обслуживание">
+                </div>
+                <div class="services-item-text">
+                  <h3 class="services-item-title">
+                    <a class="services-item-link" href="#">
+                      Эксклюзивное обслуживание
+                      <span class="services-arrow-icon"></span>
+                    </a>
+                  </h3>
+                  <p class="item-desc">
+                    Равным образом постоянный количественный рост и сфера нашей активности
+                  </p>
+                </div>
+              </li>
             </div>
-            <div class="services-item-text">
-              <h3 class="services-item-title">
-                <a class="services-item-link" href="#">
-                  Эксклюзивное обслуживание
-                  <span class="services-arrow-icon"></span>
-                </a>
-              </h3>
-              <p class="item-desc">
-                Равным образом постоянный количественный рост и сфера нашей активности
-              </p>
+
+            <div class="col-lg-6">
+              <li class="services-item">
+                <div class="services-item-img-block">
+                  <img class="services-item-img" src="assets/img/rent.png" alt="Аренда банкетных залов">
+                </div>
+                <div class="services-item-text">
+                  <h3 class="services-item-title">
+                    <a class="services-item-link" href="#">
+                      Аренда банкетных залов
+                      <span class="services-arrow-icon"></span>
+                    </a>
+                  </h3>
+                  <p class="item-desc">
+                    Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
+                  </p>
+                </div>
+              </li> 
+            </div>  
+            
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-6">
+              <li class="services-item">
+                <div class="services-item-img-block">
+                  <img class="services-item-img" src="assets/img/pool.png" alt="Сауны, бассейны, бани, фитнес-залы">
+                </div>
+                <div class="services-item-text">
+                  <h3 class="services-item-title">
+                    <a class="services-item-link" href="#">
+                      Сауны, бассейны, бани, фитнес-залы
+                      <span class="services-arrow-icon"></span>
+                    </a>
+                  </h3>
+                  <p class="item-desc">
+                    Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                  </p>
+                </div>
+              </li>
             </div>
-          </li>
-          <li class="services-item">
-            <div class="services-item-img-block">
-              <img class="services-item-img" src="assets/img/rent.png" alt="Аренда банкетных залов">
+
+            <div class="col-lg-6">
+              <li class="services-item">
+                <div class="services-item-img-block">
+                  <img class="services-item-img" src="assets/img/cars.png" alt="Охраняемые автомобильные стоянки">
+                </div>
+                <div class="services-item-text">
+                  <h3 class="services-item-title">
+                    <a class="services-item-link" href="#">
+                      Охраняемые автомобильные стоянки
+                      <span class="services-arrow-icon"></span>
+                    </a>
+                  </h3>
+                  <p class="item-desc">
+                    Не следует, однако забывать, что начало повседневной работы по формированию позиции
+                  </p>
+                </div>
+              </li>
             </div>
-            <div class="services-item-text">
-              <h3 class="services-item-title">
-                <a class="services-item-link" href="#">
-                  Аренда банкетных залов
-                  <span class="services-arrow-icon"></span>
-                </a>
-              </h3>
-              <p class="item-desc">
-                Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.
-              </p>
-            </div>
-          </li>
-          <li class="services-item">
-            <div class="services-item-img-block">
-              <img class="services-item-img" src="assets/img/pool.png" alt="Сауны, бассейны, бани, фитнес-залы">
-            </div>
-            <div class="services-item-text">
-              <h3 class="services-item-title">
-                <a class="services-item-link" href="#">
-                  Сауны, бассейны, бани, фитнес-залы
-                  <span class="services-arrow-icon"></span>
-                </a>
-              </h3>
-              <p class="item-desc">
-                Не следует, однако забывать, что начало повседневной работы по формированию позиции
-              </p>
-            </div>
-          </li>
-          <li class="services-item">
-            <div class="services-item-img-block">
-              <img class="services-item-img" src="assets/img/cars.png" alt="Охраняемые автомобильные стоянки">
-            </div>
-            <div class="services-item-text">
-              <h3 class="services-item-title">
-                <a class="services-item-link" href="#">
-                  Охраняемые автомобильные стоянки
-                  <span class="services-arrow-icon"></span>
-                </a>
-              </h3>
-              <p class="item-desc">
-                Не следует, однако забывать, что начало повседневной работы по формированию позиции
-              </p>
-            </div>
-          </li>
+            
+            
+          </div>
+          
+          
         </ul>
       </div>
     </section>
