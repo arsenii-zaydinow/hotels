@@ -176,7 +176,7 @@ img {
 }
 
 .slide-right:hover {
-  transform: translateX(10px);
+  transform: translateX(12px);
 }
 
 /* Header */
@@ -204,6 +204,7 @@ img {
 }
 
 .phone {
+  display: inline-block;
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
@@ -217,8 +218,10 @@ img {
 }
 
 .login {
+  display: block;
+  float: right;
   padding-top: 1px;
-  /* padding-right: 10px; */
+  padding-right: 12px;
   font-size: 16px;
   line-height: 1;
   font-weight: 500;
@@ -229,7 +232,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  padding: 10px 20px;
+  padding: 10px 8px;
   border-radius: 12px;
   background-color: var(--white-color);
 }
@@ -262,7 +265,9 @@ img {
   border: 0;
   border-radius: 15px;
   outline: none;
-  width: 355px;
+  /* width: 355px; */
+  /* float: right; */
+  width: 100%;
   height: 50px;
   font-size: 14px;
   line-height: 1;
@@ -290,11 +295,12 @@ img {
 
 .hero-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .booking-block {
   max-width: 518px;
+  margin-right: 57px;
 }
 
 .booking-form-select {
@@ -408,12 +414,16 @@ img {
 /* Section Services */
 
 .services-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.services-row:nth-child(n+2) {
+  margin-top: 24px;
 }
 
 .services-item {
-  width: calc(50% - 12.6px);
+  /* width: calc(50% - 12.6px); */
   border-radius: 12px;
   background-color: var(--white-color);
   transition-duration: 1s;
@@ -430,7 +440,11 @@ img {
 }
 
 .services-item:nth-child(odd) {
-  margin-right: 24px;
+  /* margin-right: 24px; */
+}
+
+.services-item-img {
+  width: 100%;
 }
 
 .services-item-text {
@@ -465,24 +479,28 @@ img {
 /* Section Advantages */
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
+
+.advantages-row:nth-child(n+2) {
+  margin-top: 23px;
+} 
 
 .advantages-item {
   padding: 40px;
   border-radius: 12px;
-  width: calc(25% - 17.5px);
+  /* width: calc(25% - 17.5px); */
   height: 275px;
   background-color: var(--white-color);
 }
 
 .advantages-item:nth-child(n+5) {
-  margin-top: 23px;
+  /* margin-top: 23px; */
 }
 
 .advantages-item:not(:nth-child(4n)) {
-  margin-right: 23px;
+  /* margin-right: 23px; */
 }
 
 .advantages-icon {
@@ -540,24 +558,32 @@ img {
 /* Section Places */
 
 .places-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.places-row:nth-child(n+2) {
+  margin-top: 24px;
 }
 
 .places-item {
   border-radius: 12px;
-  width: calc(100%/3 - 17px);
+  /* width: calc(100%/3 - 17px); */
   background-color: var(--white-color);
   transition-duration: 1s;
   transition-property: transform, box-shadow;
 }
 
+.places-item-img {
+  width: 100%;
+}
+
 .places-item:nth-child(n+4) {
-  margin-top: 25.5px;
+  /* margin-top: 25.5px; */
 }
 
 .places-item:not(:nth-child(3n)) {
-  margin-right: 25.5px;
+  /* margin-right: 25.5px; */
 }
 
 .places-item:hover {
@@ -610,6 +636,7 @@ img {
   align-items: flex-end;
   padding-bottom: 55px;
   padding-left: 40px;
+  height: 448.578px;
   background: url(/assets/img/41.png) center center / cover;
 }
 
@@ -643,12 +670,12 @@ img {
 /* Section Contacts */
 
 .contacts-container {
-  display: flex;
+  /* display: flex; */
 }
 
 .contacts-info-block {
   padding: 45px;
-  max-width: 470px;
+  /* max-width: 470px; */
   height: 100%;
   border-radius: 12px;
   background-color: var(--white-color);
@@ -708,7 +735,6 @@ img {
 }
 
 .contacts-form-block {
-  margin: 0 auto ;
   padding-top: 75px;
 }
 
@@ -722,6 +748,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 340px;
+  margin: 0 auto;
 }
 
 .contacts-form-input {
@@ -743,13 +770,14 @@ img {
 
 .footer-container {
   display: flex;
-  padding: 50px;
-  max-width: 1170px;
+  padding: 50px 0;
+  /* max-width: 1170px; */
   border-radius: 12px;
   background: var(--charcoal-color) url(/assets/img/sun.png) 80% bottom no-repeat;
 }
 
 .footer-info-container {
+  padding-left: 38px;
   max-width: 310px;
 }
 
@@ -761,7 +789,7 @@ img {
 }
 
 .footer-contacts-container {
-  margin-left: 110px;
+  
 }
 
 .footer-contacts-text {
@@ -799,7 +827,7 @@ img {
 .footer-social-container {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  
 }
 
 .footer-social-link {
