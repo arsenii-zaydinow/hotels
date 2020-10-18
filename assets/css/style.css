@@ -228,13 +228,15 @@ img {
 }
 
 .nav-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 30px;
-  padding: 10px 8px;
+  padding: 10px 20px;
   border-radius: 12px;
   background-color: var(--white-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -265,8 +267,6 @@ img {
   border: 0;
   border-radius: 15px;
   outline: none;
-  /* width: 355px; */
-  /* float: right; */
   width: 100%;
   height: 50px;
   font-size: 14px;
@@ -295,7 +295,6 @@ img {
 
 .hero-container {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .booking-block {
@@ -413,17 +412,11 @@ img {
 
 /* Section Services */
 
-.services-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-
 .services-row:nth-child(n+2) {
   margin-top: 24px;
 }
 
 .services-item {
-  /* width: calc(50% - 12.6px); */
   border-radius: 12px;
   background-color: var(--white-color);
   transition-duration: 1s;
@@ -433,14 +426,6 @@ img {
 .services-item:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.486);
   transform: scale(1.03);
-}
-
-.services-item:nth-child(n+3) {
-  margin-top: 24px;
-}
-
-.services-item:nth-child(odd) {
-  /* margin-right: 24px; */
 }
 
 .services-item-img {
@@ -478,11 +463,6 @@ img {
 
 /* Section Advantages */
 
-.advantages-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-
 .advantages-row:nth-child(n+2) {
   margin-top: 23px;
 } 
@@ -490,17 +470,8 @@ img {
 .advantages-item {
   padding: 40px;
   border-radius: 12px;
-  /* width: calc(25% - 17.5px); */
   height: 275px;
   background-color: var(--white-color);
-}
-
-.advantages-item:nth-child(n+5) {
-  /* margin-top: 23px; */
-}
-
-.advantages-item:not(:nth-child(4n)) {
-  /* margin-right: 23px; */
 }
 
 .advantages-icon {
@@ -557,11 +528,6 @@ img {
 
 /* Section Places */
 
-.places-list {
-  /* display: flex;
-  flex-wrap: wrap; */
-}
-
 .places-row:nth-child(n+2) {
   margin-top: 24px;
 }
@@ -576,14 +542,6 @@ img {
 
 .places-item-img {
   width: 100%;
-}
-
-.places-item:nth-child(n+4) {
-  /* margin-top: 25.5px; */
-}
-
-.places-item:not(:nth-child(3n)) {
-  /* margin-right: 25.5px; */
 }
 
 .places-item:hover {
@@ -668,10 +626,6 @@ img {
 }
 
 /* Section Contacts */
-
-.contacts-container {
-  /* display: flex; */
-}
 
 .contacts-info-block {
   padding: 45px;
@@ -769,16 +723,14 @@ img {
 }
 
 .footer-container {
-  display: flex;
   padding: 50px 0;
-  /* max-width: 1170px; */
   border-radius: 12px;
   background: var(--charcoal-color) url(/assets/img/sun.png) 80% bottom no-repeat;
 }
 
 .footer-info-container {
-  padding-left: 38px;
-  max-width: 310px;
+  margin-right: -24px;
+  padding: 0 62px;
 }
 
 .footer-info-text {
@@ -786,10 +738,6 @@ img {
   font-size: 16px;
   line-height: 32px;
   color: var(--white-color);
-}
-
-.footer-contacts-container {
-  
 }
 
 .footer-contacts-text {
@@ -827,7 +775,8 @@ img {
 .footer-social-container {
   display: flex;
   flex-direction: column;
-  
+  align-items: flex-end;
+  padding-right: 38px;
 }
 
 .footer-social-link {
